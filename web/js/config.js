@@ -3,6 +3,24 @@
  * Apps Script 배포 URL, Sheets ID 등 환경 변수
  */
 
+const FIELD = {
+  ID: "NO",
+  NAME: "주택명",
+  ORGANIZATION: "단체명",
+  REGION: "광역",
+  DISTRICT: "자치구",
+  TYPE: "유형",
+  TYPE2: "유형2",
+  STATUS: "운영상태",
+  COMPLETION: "준공여부",
+  HOUSEHOLDS: "세대",
+  ADDRESS: "위치",
+  LAT: "위도",
+  LNG: "경도",
+  NOTE: "비고",
+  YEAR: "심사연도"
+};
+
 const CONFIG = {
   // Apps Script 웹 앱 배포 URL
   // Code.gs의 doGet/doPost를 배포한 URL로 변경하세요
