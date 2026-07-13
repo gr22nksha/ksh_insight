@@ -1,1 +1,209 @@
+/* ---------- Reset ---------- */
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:
+        "Pretendard",
+        "Noto Sans KR",
+        sans-serif;
+
+    background:#f5f7fb;
+    color:#333;
+}
+
+/* ---------- Header ---------- */
+
+.topbar{
+
+    background:#006241;
+    color:white;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 24px;
+
+}
+
+.logo h1{
+
+    font-size:28px;
+
+}
+
+.logo span{
+
+    font-size:13px;
+    opacity:.8;
+
+}
+
+/* ---------- KPI ---------- */
+
+.kpi{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(auto-fit,minmax(180px,1fr));
+
+    gap:18px;
+
+    padding:24px;
+
+}
+
+.card{
+
+    background:white;
+
+    border-radius:10px;
+
+    padding:20px;
+
+    box-shadow:
+        0 2px 8px rgba(0,0,0,.08);
+
+}
+
+.card .title{
+
+    color:#888;
+    margin-bottom:8px;
+
+}
+
+.card div:last-child{
+
+    font-size:30px;
+    font-weight:700;
+
+}
+
+/* ---------- Search ---------- */
+
+.searchArea{
+
+    display:flex;
+
+    gap:12px;
+
+    padding:0 24px 24px;
+
+}
+
+.searchArea input{
+
+    flex:1;
+
+    padding:12px 16px;
+
+    border:1px solid #ddd;
+
+    border-radius:8px;
+
+    font-size:15px;
+
+}
+
+.searchArea button{
+
+    background:#006241;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 24px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+}
+
+/* ---------- Filter ---------- */
+
+.hidden{
+
+    display:none;
+
+}
+
+/* ---------- Table ---------- */
+
+.tableArea{
+
+    padding:24px;
+
+}
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    background:white;
+
+    border-radius:10px;
+
+    overflow:hidden;
+
+}
+
+thead{
+
+    background:#006241;
+
+    color:white;
+
+}
+
+th,
+td{
+
+    padding:14px;
+
+    border-bottom:1px solid #eee;
+
+    text-align:left;
+
+}
+
+tbody tr:hover{
+
+    background:#f8fbff;
+
+}
+
+/* ---------- Mobile ---------- */
+
+@media(max-width:768px){
+
+    .topbar{
+
+        flex-direction:column;
+        align-items:flex-start;
+
+    }
+
+    .searchArea{
+
+        flex-direction:column;
+
+    }
+
+    table{
+
+        font-size:13px;
+
+    }
+
+}
