@@ -6,7 +6,7 @@
 const CONFIG = {
   // Apps Script 웹 앱 배포 URL
   // Code.gs의 doGet/doPost를 배포한 URL로 변경하세요
-  APPS_SCRIPT_URL: 'https://script.google.com/macros/d/{DEPLOYMENT_ID}/usercss?v=1',
+  APPS_SCRIPT_URL: 'https://script.google.com/macros/d/AKfycbwNR8TyNbOfInMYTh6-1SsVdrmZJ7Mxm7ue6jwqMOH7IUdwRnDumJDoK-VEjbOwqHmf/usercss?v=1',
 
   // Google Sheets ID
   SHEET_ID: '1yX14R6IwkXMXel1TB7W1X5HPLwWoImYJus_pitE1lgg',
